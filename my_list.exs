@@ -48,4 +48,7 @@ defmodule MyList do
   def span(from, to, list) do
     list ++ [ from | span(from + 1, to, list) ]
   end
+
+  # 微妙に違うけど2からnの素数を求める
+  # iex(8)> for x <- MyList.span(2, 100), rem(x, 2) != 0, do: x
 end
