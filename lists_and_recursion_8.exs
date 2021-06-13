@@ -24,6 +24,6 @@ orders = [
 # IO.inspect results, width: 80
 
 # これがきれい
-https://github.com/pcewing/programming-elixir-exercises/blob/master/ch10/ListsAndRecursion-8/README.md
+# https://github.com/pcewing/programming-elixir-exercises/blob/master/ch10/ListsAndRecursion-8/README.md
 
 exit(:normal)
