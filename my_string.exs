@@ -39,4 +39,14 @@ defmodule MyString do
   #   b = word2 |> String.codepoints |> Enum.sort
   #   a == b
   # end
+
+  # MyString.center(["cat", "zebra", "elephant"])
+  #   cat
+  #  zebra
+  # elephant
+  def center(word_list) do
+    max_length = word_list |> Enum.map(&(String.length(&1))) |> Enum.sort |> List.last
+    for word <- word_list, do: :string.pad(word, max_length, :both) |> List.to_string |> IO.puts
+  end
+
 end
