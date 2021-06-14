@@ -54,6 +54,8 @@ defmodule MyEnum do
       split(tail, tmp ++ [head], count - 1)
     end
   end
+
+  # TODO: 残りの関数は後でやる
 end
 
 # all?
